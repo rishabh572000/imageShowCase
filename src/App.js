@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Gallery from 'react-photo-gallery'
-import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
+import File from "./File";
 import imageOne from './media/one.jpg'
 import imageTwo from './media/two.jpg'
 import imageThree from './media/three.jpg'
@@ -94,12 +94,12 @@ function App() {
       </Masonry>
       </ResponsiveMasonry>
     </div> */}
-
+      <File />
     <div className="One">
     <Gallery photos={photos} direction={"column"} />
     </div>
     </div>
   );
 }
-
+// AppRegistry.registerComponent('My360App', () => App);
 export default App;
